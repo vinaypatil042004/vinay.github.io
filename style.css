@@ -23,6 +23,12 @@ main {
     margin-bottom: 20px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.component:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .component img {
@@ -43,6 +49,9 @@ main {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
 }
 
 button {
@@ -54,8 +63,15 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+.show .details {
+    display: block;
+    max-height: 100px;
+    padding: 10px;
 }
