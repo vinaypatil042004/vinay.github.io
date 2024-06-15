@@ -1,0 +1,9 @@
+/project-directory
+  /images
+    resistor.jpg
+    capacitor.jpg
+    arduino.jpg
+    raspberrypi.jpg
+  index.html
+  styles.css
+  script.js
