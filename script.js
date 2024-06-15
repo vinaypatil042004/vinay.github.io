@@ -1,9 +1,8 @@
-/project-directory
-  /images
-    resistor.jpg
-    capacitor.jpg
-    arduino.jpg
-    raspberrypi.jpg
-  index.html
-  styles.css
-  script.js
+function showDetails(id) {
+    var details = document.getElementById(id);
+    if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+    } else {
+        details.style.display = "none";
+    }
+}
